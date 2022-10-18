@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo Exercicio</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
-
+        <div>
+            <p> Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            <p> Sexo:
+                <input type="radio" name="radsex" id="txtmas" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="txtfem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
     </section>
 
     <footer>
+        <p> &copy; Acesse  meu repósitorio no Git Hub</p>
+            <a href="https://github.com/Maycon-bresolin" target="_blank"><img src="logo-github.jpg" alt="foto do git hub"></a>
 
     </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>
